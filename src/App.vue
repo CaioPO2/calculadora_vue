@@ -1,4 +1,6 @@
 <script setup>
+  import {reactive} from "vue"
+
   const estado = reactive ({
     num1: 0,
     num2: 0,
@@ -76,7 +78,7 @@ function getOperador(evento) {
     </select>
     <br>
     <br>
-    <span>O resultado da operação é: {{ resultado }}</span>
+    <span>O resultado da operação é: {{ estado.resultado }}</span>
   </div>
 </template>
 
